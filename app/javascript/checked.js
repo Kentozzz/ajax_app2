@@ -28,6 +28,9 @@ function check() {
       // sendでリクエストを送信する
       XHR.send();
  
+
+
+      
       // レスポンスを受け取った時の処理を記述する
       XHR.onload = () => {
         const item = XHR.response.post;
