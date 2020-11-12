@@ -29,6 +29,7 @@ function check() {
       XHR.send();
  
 
+
       
       // レスポンスを受け取った時の処理を記述する
       XHR.onload = () => {
