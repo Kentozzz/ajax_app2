@@ -1,20 +1,21 @@
 function check() {
   // 投稿のDOMを取得している
   const posts = document.getElementsByClassName("post");
- 
+  // HTMLの中のすべてのpostクラスを探し出しpostsに代入
   // 取得したDOMを配列に変換している
   postsA = Array.from(posts);
- 
+  // Array.fromでHTMLcollectionを省いている
+
   postsA.forEach(function (post) {
       if (post.getAttribute("data-load") != null) {
        return null;
      }
-     post.setAttribute("data-load", "true");
+     post.("data-load", "true");
     // 投稿をクリックした場合に実行する処理を定義している
     post.addEventListener("click", (e) => {
       // どの投稿をクリックしたのか、カスタムデータを利用して取得している
       const postId = post.getAttribute("data-id");
- 
+        console.log(postId)
       // Ajaxに必要なオブジェクトを生成している
       const XHR = new XMLHttpRequest();
  
