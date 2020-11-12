@@ -7,7 +7,9 @@ function check() {
   // Array.fromでHTMLcollectionを省いている
 
   postsA.forEach(function (post) {
-      if (post.getAttribute("data-load") != null) {
+    
+
+    
        return null;
      }
      post.("data-load", "true");
